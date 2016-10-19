@@ -12,4 +12,8 @@
         <p>Env Test: <?php print (array_key_exists('SOME_VAR', $_ENV) ? $_ENV['SOME_VAR'] : 'None') ?></p>
         <p>Version: <?php print phpversion(); ?></p>
     </body>
+    <script type="text/javascript">
+        var ip = "<?php echo $_SERVER['SERVER_ADDR']; ?>";
+        alert(ip);
+    </script>
 </html>
